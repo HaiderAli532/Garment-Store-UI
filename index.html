@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Styles | Kids Fashion Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a href="index.html" class="logo">Little<span>Styles</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="product-detail.html">Product</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+      <div class="nav-actions">
+        <label class="search-wrap">
+          <span>Search</span>
+          <input type="search" placeholder="Jacket, dress, shoes..." />
+        </label>
+        <a href="cart.html" class="cart-icon" aria-label="Open cart">🛒<span class="cart-count js-cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-shell js-parallax" data-speed="0.08">
+        <div class="hero-copy">
+          <p class="eyebrow">Spring-Summer 2026</p>
+          <h1>New Collection for Little Stars ✨</h1>
+          <p>Playful silhouettes, premium fabrics, and trend-forward outfits for every little adventure.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="products.html">Shop Now</a>
+            <a class="btn btn-outline" href="#offers">View Offers</a>
+          </div>
+        </div>
+        <img src="https://images.pexels.com/photos/3661550/pexels-photo-3661550.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kids fashion hero">
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Shop by Category</h2>
+        </div>
+        <div class="category-grid">
+          <article class="category-card">
+            <img src="https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Boys clothing">
+            <div class="category-content"><h3>Boys</h3><a href="products.html">Shop Now →</a></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.pexels.com/photos/1620770/pexels-photo-1620770.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Girls clothing">
+            <div class="category-content"><h3>Girls</h3><a href="products.html">Shop Now →</a></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.pexels.com/photos/459953/pexels-photo-459953.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Baby clothing">
+            <div class="category-content"><h3>Baby</h3><a href="products.html">Shop Now →</a></div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.pexels.com/photos/5935728/pexels-photo-5935728.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Party wear kids outfit">
+            <div class="category-content"><h3>Party Wear</h3><a href="products.html">Shop Now →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Products</h2>
+          <a href="products.html" class="inline-link">View all</a>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-id="denim-explorer-set" data-name="Denim Explorer Set" data-price="49" data-image="https://images.pexels.com/photos/5559987/pexels-photo-5559987.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5559987/pexels-photo-5559987.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Denim jacket set">
+            <div class="product-info">
+              <h3>Denim Explorer Set</h3>
+              <p class="price">$49</p>
+              <p class="rating">★★★★★</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="floral-day-dress" data-name="Floral Day Dress" data-price="39" data-image="https://images.pexels.com/photos/5623078/pexels-photo-5623078.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5623078/pexels-photo-5623078.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Floral dress kids">
+            <div class="product-info">
+              <h3>Floral Day Dress</h3>
+              <p class="price">$39</p>
+              <p class="rating">★★★★☆</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="cloud-knit-romper" data-name="Cloud Knit Romper" data-price="29" data-image="https://images.pexels.com/photos/3661367/pexels-photo-3661367.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3661367/pexels-photo-3661367.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Baby knit outfit">
+            <div class="product-info">
+              <h3>Cloud Knit Romper</h3>
+              <p class="price">$29</p>
+              <p class="rating">★★★★★</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="weekend-hoodie" data-name="Weekend Hoodie" data-price="34" data-image="https://images.pexels.com/photos/1620768/pexels-photo-1620768.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/1620768/pexels-photo-1620768.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Casual hoodie kids">
+            <div class="product-info">
+              <h3>Weekend Hoodie</h3>
+              <p class="price">$34</p>
+              <p class="rating">★★★★☆</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="plaid-shirt-combo" data-name="Plaid Shirt Combo" data-price="41" data-image="https://images.pexels.com/photos/5559993/pexels-photo-5559993.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5559993/pexels-photo-5559993.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Plaid shirt kids">
+            <div class="product-info">
+              <h3>Plaid Shirt Combo</h3>
+              <p class="price">$41</p>
+              <p class="rating">★★★★★</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="mini-street-sneakers" data-name="Mini Street Sneakers" data-price="32" data-image="https://images.pexels.com/photos/5560047/pexels-photo-5560047.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5560047/pexels-photo-5560047.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kids shoes collection">
+            <div class="product-info">
+              <h3>Mini Street Sneakers</h3>
+              <p class="price">$32</p>
+              <p class="rating">★★★★☆</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="winter-puff-jacket" data-name="Winter Puff Jacket" data-price="58" data-image="https://images.pexels.com/photos/5886042/pexels-photo-5886042.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5886042/pexels-photo-5886042.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Winter kids jacket">
+            <div class="product-info">
+              <h3>Winter Puff Jacket</h3>
+              <p class="price">$58</p>
+              <p class="rating">★★★★★</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          <article class="product-card" data-id="little-party-suit" data-name="Little Party Suit" data-price="64" data-image="https://images.pexels.com/photos/5935723/pexels-photo-5935723.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5935723/pexels-photo-5935723.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Occasion wear kids">
+            <div class="product-info">
+              <h3>Little Party Suit</h3>
+              <p class="price">$64</p>
+              <p class="rating">★★★★★</p>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="section reveal">
+      <div class="container">
+        <div class="promo-banner js-parallax" data-speed="0.05">
+          <div>
+            <p class="eyebrow">Limited Time</p>
+            <h2>Summer Sale Up to 40% Off</h2>
+            <p>Refresh their wardrobe with premium picks for every season.</p>
+          </div>
+          <a href="products.html" class="btn btn-primary">Explore Deals</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-head"><h2>Happy Parents</h2></div>
+        <div class="testimonials">
+          <article class="testimonial">
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Parent avatar">
+            <p>"The quality feels premium and the fit is perfect. My daughter loved every piece!"</p>
+            <h4>Sarah K.</h4>
+          </article>
+          <article class="testimonial">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Parent avatar">
+            <p>"Fast delivery and such stylish outfits. Looks exactly like a high-end kids brand."</p>
+            <h4>Ahmed R.</h4>
+          </article>
+          <article class="testimonial">
+            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Parent avatar">
+            <p>"Soft fabrics, vibrant colors, and easy ordering. This is now our go-to kids store."</p>
+            <h4>Mina J.</h4>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>LittleStyles</h3>
+        <p>Premium everyday fashion for little dreamers.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="products.html">Shop</a>
+        <a href="product-detail.html">Product Detail</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email">
+          <button type="button" class="btn btn-primary">Join</button>
+        </form>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <p>Instagram • Facebook • Pinterest</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

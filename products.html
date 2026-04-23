@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Styles | Product Listing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="products">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a href="index.html" class="logo">Little<span>Styles</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="product-detail.html">Product</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+      <div class="nav-actions">
+        <label class="search-wrap">
+          <span>Search</span>
+          <input type="search" placeholder="Find products..." />
+        </label>
+        <a href="cart.html" class="cart-icon" aria-label="Open cart">🛒<span class="cart-count js-cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal js-parallax" data-speed="0.04">
+      <p class="eyebrow">Collection</p>
+      <h1>Kidswear Essentials</h1>
+      <p>Browse seasonal looks designed for comfort, movement, and style.</p>
+    </section>
+
+    <section class="listing-layout reveal">
+      <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <p>Age Group</p>
+          <label><input type="checkbox"> 0-2 Years</label>
+          <label><input type="checkbox"> 3-5 Years</label>
+          <label><input type="checkbox"> 6-9 Years</label>
+          <label><input type="checkbox"> 10-12 Years</label>
+        </div>
+        <div class="filter-group">
+          <p>Price Range</p>
+          <label><input type="checkbox"> Under $30</label>
+          <label><input type="checkbox"> $30 - $50</label>
+          <label><input type="checkbox"> $50 - $80</label>
+        </div>
+        <div class="filter-group">
+          <p>Gender</p>
+          <label><input type="checkbox"> Boys</label>
+          <label><input type="checkbox"> Girls</label>
+          <label><input type="checkbox"> Unisex</label>
+        </div>
+      </aside>
+
+      <div class="panel">
+        <div class="product-toolbar">
+          <p>Showing 12 products</p>
+          <select>
+            <option>Sort: Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest First</option>
+          </select>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-id="classic-puff-jacket" data-name="Classic Puff Jacket" data-price="58" data-image="https://images.pexels.com/photos/5886042/pexels-photo-5886042.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5886042/pexels-photo-5886042.jpeg?auto=compress&cs=tinysrgb&w=900" alt="kids jacket">
+            <div class="product-info"><h3>Classic Puff Jacket</h3><p class="price">$58</p><p class="rating">★★★★★</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="sunflower-midi-dress" data-name="Sunflower Midi Dress" data-price="44" data-image="https://images.pexels.com/photos/5623078/pexels-photo-5623078.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5623078/pexels-photo-5623078.jpeg?auto=compress&cs=tinysrgb&w=900" alt="kids dress">
+            <div class="product-info"><h3>Sunflower Midi Dress</h3><p class="price">$44</p><p class="rating">★★★★☆</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="baby-knit-set" data-name="Baby Knit Set" data-price="29" data-image="https://images.pexels.com/photos/3661367/pexels-photo-3661367.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3661367/pexels-photo-3661367.jpeg?auto=compress&cs=tinysrgb&w=900" alt="baby knit set">
+            <div class="product-info"><h3>Baby Knit Set</h3><p class="price">$29</p><p class="rating">★★★★★</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="plaid-street-shirt" data-name="Plaid Street Shirt" data-price="36" data-image="https://images.pexels.com/photos/5559993/pexels-photo-5559993.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5559993/pexels-photo-5559993.jpeg?auto=compress&cs=tinysrgb&w=900" alt="plaid shirt">
+            <div class="product-info"><h3>Plaid Street Shirt</h3><p class="price">$36</p><p class="rating">★★★★☆</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="everyday-sneakers" data-name="Everyday Sneakers" data-price="32" data-image="https://images.pexels.com/photos/5560047/pexels-photo-5560047.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5560047/pexels-photo-5560047.jpeg?auto=compress&cs=tinysrgb&w=900" alt="kids sneakers">
+            <div class="product-info"><h3>Everyday Sneakers</h3><p class="price">$32</p><p class="rating">★★★★☆</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="mini-party-suit" data-name="Mini Party Suit" data-price="64" data-image="https://images.pexels.com/photos/5935723/pexels-photo-5935723.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5935723/pexels-photo-5935723.jpeg?auto=compress&cs=tinysrgb&w=900" alt="party suit">
+            <div class="product-info"><h3>Mini Party Suit</h3><p class="price">$64</p><p class="rating">★★★★★</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="campus-hoodie" data-name="Campus Hoodie" data-price="34" data-image="https://images.pexels.com/photos/1620768/pexels-photo-1620768.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/1620768/pexels-photo-1620768.jpeg?auto=compress&cs=tinysrgb&w=900" alt="hoodie kids">
+            <div class="product-info"><h3>Campus Hoodie</h3><p class="price">$34</p><p class="rating">★★★★☆</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+          <article class="product-card" data-id="denim-adventure-set" data-name="Denim Adventure Set" data-price="49" data-image="https://images.pexels.com/photos/5559987/pexels-photo-5559987.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/5559987/pexels-photo-5559987.jpeg?auto=compress&cs=tinysrgb&w=900" alt="denim outfit">
+            <div class="product-info"><h3>Denim Adventure Set</h3><p class="price">$49</p><p class="rating">★★★★★</p><div class="action-row"><button class="btn btn-primary add-to-cart">Add to Cart</button> <a class="btn btn-outline-dark" href="product-detail.html">View</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

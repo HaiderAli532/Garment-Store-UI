@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Styles | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a href="index.html" class="logo">Little<span>Styles</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="product-detail.html">Product</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+      <div class="nav-actions">
+        <label class="search-wrap">
+          <span>Search</span>
+          <input type="search" placeholder="Find products..." />
+        </label>
+        <button class="cart-icon js-open-drawer" aria-label="Open cart drawer">🛒<span class="cart-count js-cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal js-parallax" data-speed="0.04">
+      <p class="eyebrow">Your Cart</p>
+      <h1>Almost There!</h1>
+      <p>Review your picks and proceed to checkout.</p>
+    </section>
+
+    <section class="cart-layout reveal">
+      <div class="panel">
+        <h3>Cart Items</h3>
+        <div id="cart-items"></div>
+      </div>
+
+      <aside class="panel">
+        <h3>Order Summary</h3>
+        <p style="margin-top:0.7rem;">Subtotal: <strong id="subtotal">$88</strong></p>
+        <p>Shipping: <strong>$6</strong></p>
+        <hr style="margin:0.9rem 0; border-color:#eef1f7;">
+        <p>Total: <strong id="grand-total">$94</strong></p>
+        <button class="btn btn-primary" style="margin-top:1rem; width:100%;">Proceed to Checkout</button>
+      </aside>
+    </section>
+  </main>
+
+  <div class="drawer-overlay" id="drawer-overlay">
+    <aside class="cart-drawer" id="cart-drawer">
+      <div class="drawer-header">
+        <h3>Quick Cart</h3>
+        <button class="btn js-close-drawer">Close</button>
+      </div>
+      <p><span id="drawer-item-count">0</span> items in cart</p>
+      <div class="drawer-list" id="drawer-list"></div>
+      <p style="margin-top:0.5rem;">Total: <strong id="drawer-total">$94</strong></p>
+      <a href="#" class="btn btn-primary" style="display:inline-block;margin-top:1rem;">Checkout</a>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
