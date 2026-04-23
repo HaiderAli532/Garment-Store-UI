@@ -173,13 +173,17 @@ img {
   padding: 1.8rem 0 2.4rem;
 }
 
+.hero-premium {
+  padding-top: 2rem;
+}
+
 .hero-shell {
-  background: linear-gradient(125deg, #052349 0%, #0f3d74 60%, #174f89 100%);
+  background: radial-gradient(circle at 10% 15%, #1e4f8a 0%, #123a6a 32%, #0d2e57 72%, #0a2447 100%);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  min-height: 500px;
+  min-height: 560px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
   box-shadow: var(--shadow-soft);
   animation: floatIn 0.8s ease both;
@@ -188,7 +192,7 @@ img {
 
 .hero-copy {
   color: #fff;
-  padding: 2.8rem;
+  padding: 3rem 2.8rem 2.6rem;
 }
 
 .eyebrow {
@@ -212,10 +216,131 @@ img {
   max-width: 520px;
 }
 
-.hero-shell > img {
+.hero-visual {
+  position: relative;
+  height: 100%;
+  min-height: 560px;
+  padding: 1.3rem 1.3rem 1.3rem 0;
+}
+
+.hero-visual-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.9rem;
+}
+
+.hero-single-image {
+  height: 100%;
+}
+
+.hero-tile {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(8, 25, 48, 0.3);
+}
+
+.hero-tile img,
+.hero-main-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-tile-side img {
+  object-position: center top;
+}
+
+.hero-tile-overlay {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  padding: 0.65rem 0.75rem;
+}
+
+.hero-tile-overlay p {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.hero-tile-overlay h4 {
+  font-size: 0.95rem;
+}
+
+.hero-badges {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.hero-badges span {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ecf3ff;
+  border-radius: 999px;
+  padding: 0.42rem 0.76rem;
+  font-size: 0.82rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.hero-trust {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  max-width: 500px;
+}
+
+.hero-trust div {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 0.55rem 0.65rem;
+}
+
+.hero-trust strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.hero-trust p {
+  margin-top: 0.1rem;
+  font-size: 0.78rem;
+  color: #e5eeff;
+}
+
+.promo-pill {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 14px 26px rgba(20, 33, 61, 0.22);
+  padding: 0.7rem 0.85rem;
+  max-width: 245px;
+  animation: bob 3.2s ease-in-out infinite;
+}
+
+.promo-pill p {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.promo-pill h4 {
+  font-size: 0.93rem;
+  margin: 0.12rem 0 0.2rem;
+}
+
+.promo-pill a {
+  color: #29548b;
+  font-weight: 600;
+  font-size: 0.84rem;
 }
 
 .hero-ctas {
@@ -799,6 +924,16 @@ img {
   }
 }
 
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 @media (max-width: 1024px) {
   .product-grid,
   .category-grid {
@@ -811,6 +946,23 @@ img {
   .footer-grid,
   .hero-shell {
     grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    padding-bottom: 1.2rem;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+    padding: 0 1.1rem 1.1rem;
+  }
+
+  .hero-visual-grid {
+    grid-template-columns: 1.4fr 1fr;
+  }
+
+  .hero-single-image {
+    min-height: 360px;
   }
 }
 
@@ -827,5 +979,15 @@ img {
   .category-grid,
   .testimonials {
     grid-template-columns: 1fr;
+  }
+
+  .hero-trust {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-pill {
+    left: 14px;
+    right: 14px;
+    max-width: unset;
   }
 }
